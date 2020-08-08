@@ -21,11 +21,7 @@ If any, what are the possible side-effects or negative impacts of the code chang
 ## Checklist
 - [ ] **The PR title** is a short **meaningful description** of what this change is about (< 10 words).
 - [ ] I have added **unit tests as well as functional tests** that prove my fix is effective or that my feature works
-- [ ] `./gradlew clean build` command runs successfully. Changes generate no new warnings
-- [ ] The branch name is like `bugfix/ECPR-xxxxx` or `hotfix/ECPR-xxxxx` or `feature/ECPR-xxxxx` depending upon whether the change is a bug-fix or a hotfix or a feature respectively
-- [ ] My commits message follows the format: `ECPR-xxxxx: Short decription of change`
 - [ ] This PR has a single commit. If there are more, they should be logical commits with appropriate commit messages.
 - [ ] I have attached any **screenshots**(if applicable)
 - [ ] I have performed a **self-review** of my own code
 - [ ] I have made corresponding changes to the documentation
-- [ ] [Jenkins pipeline successful link here](link-to-jenkins-link)
