@@ -1,0 +1,32 @@
+"""# HW: 16th may 2020
+1. Fix bugs:
+  a. add word indices in the input of logistic regression model
+  b. remove empty clause in emotion_cause_pair_per_doc_id/
+2. Vocab size is only 1000. May need to increase this to improve the accuracy
+3. Create pipeline to prepare data + model training & feeding
+4. Precision/recall/f1 score:
+proposed_pairs = (number of correct pairs / number of proposed pairs)  ---> coming out of logistic regression model
+5. Use pretrained embeddings like GloVe
+
+https://raw.githubusercontent.com/NUSTM/ECPE/master/data_combine/fold10_train.txt
+
+fold10_train.txt format:
+=======================
+1 9
+ (7,9)
+1, null, null, when I saw the suggestion was adopted
+2, null, null, when the ministry leaders wrote to me
+3, null, null, I know I am doing my part for the development of this country
+4,null,null,27 days
+5, null, null, ordinary worker Bai Jinyue of Hebei Xingtai Iron and Steel Co., Ltd.
+6, null, null, holding a thank-you letter from the various ministries and commissions of the country over the years
+7, Happiness, excited, excitedly told the reporter of China New Network
+8, null, null, 27 years
+9, null, null, the Ministry of Public Security, the State Administration for Industry and Commerce, the National Science and Technology Commission, the Ministry of Science and Technology, the Ministry of Health, the National Development and Reform Commission and other ministries have accepted and adopted my suggestions
+=======================
+
+
+doc_id, number_of_clauses
+    (emotion, cause)
+clause_id, emotion_from_seed_list, emotion_word_in_clause, clause
+"""
